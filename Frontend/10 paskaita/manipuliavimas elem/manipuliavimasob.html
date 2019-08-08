@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+	<link rel="shortcut icon" href="http://example.com/favicon.ico">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
     </div>
     
     
-    <script src="js/custome.js"></script>
+    <script src="js/custom.js"></script>
     <script>
         //paims reiksmes i masyva ivedimo metu (forma)
         
@@ -43,7 +44,27 @@
             
         });
         
-        
+        let mygtukasShow = document.querySelector("#show");
+		
+		mygtukasShow.addEventListener("mouseover", function(){
+//			console.log(asmenys);
+			document.write("<table>");
+			document.write("<tr>");
+			document.write("<th>Vardas</th>");
+			document.write("<th>Pavardė</th>");
+			document.write("<th>Amžius</th>");
+			document.write("</tr>");
+			for(let i =0; i < asmenys.length; i++){
+				document.write("<tr>");
+				document.write("<td>"+asmenys[i].vardas+"</td>");
+				document.write("<td>"+asmenys[i].pavarde+"</td>");
+				document.write("<td>"+asmenys[i].amzius+"</td>");
+				document.write("<tr>");
+			}
+			
+			document.write("</table>");
+			
+	  	});
     
     
     </script>

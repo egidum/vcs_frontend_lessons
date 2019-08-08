@@ -1,0 +1,180 @@
+body{margin: 0;}
+
+header{
+	background-image: url(https://cdn.images.express.co.uk/img/dynamic/151/750x445/934103.jpg);
+/*	background-image: url(../images/green3.jpg);*/
+	background-color: blueviolet;/* Used if the image is unavailable */
+/*	background-position: center;*/
+	background-repeat: no-repeat;
+	background-size:cover;
+	font-size: 400%;
+	color: white;
+	text-shadow: 10px 10px 10px black;	
+}
+
+.header-text{ 
+	margin: 0; 
+	text-transform:lowercase;
+	letter-spacing: 20px;	
+}
+
+
+/*Navigacija, meniu juosta*/
+
+nav {
+	position: sticky;
+	top: 0;
+	background-color: black;	
+	color: white;
+}
+
+nav, footer{	
+	background-color: black; 
+	color: white;
+}
+
+nav ul{
+   display: flex;
+	flex-wrap: wrap;
+   list-style-type: none;   
+}
+nav ul li a{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   margin: 10px;
+   padding: 10px;
+}
+nav ul li a:hover{
+   color: black;
+   background-color: white;
+}
+
+/*Container*/
+
+article, div.image{
+   margin: 10px; 
+/*   border: 1px solid black;*/
+   padding: 10px;
+   text-align: justify;
+}
+
+article img, div.image img{width: 100%;}
+
+.row{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+/*justify-content veiks tik jei .row yra flex*/
+.row-centered{justify-content: center;}
+
+.row-left{justify-content: flex-start;}
+
+.row-vertical{flex-direction: column; align-items: flex-start;}
+
+.empty{height: 50px;}
+
+footer{
+	position:relative;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-text, .footer-map{ margin: 20px;}
+
+
+		/*CSS grid - dalinimas į 12 stulpelių (=100%)*/
+
+	.col1{width: 8.33%;}
+	.col2{width: 16.66%;}
+	.col3{width: 25%;}
+	.col4{width: 33.33%;}
+	.col5{width: 41.66%;}
+	.col6{width: 50%;}
+	.col7{width: 58.33%;}
+	.col8{width: 66.66%;}
+	.col9{width: 75%;}
+	.col10{width: 83.33%;}
+	.col11{width: 91.66%;}
+	.col12{width: 100%;}
+
+
+/*Aprašoma prie kokių sąlygų veiks (ekranų dydžiai)*/
+/*iki 600px imtinai*/
+@media screen AND (max-width:600px){
+/*   .container{width: 90%;}*/
+   .cols1{width: 8.33%;}
+   .cols2{width: 16.66%;}
+   .cols3{width: 25%;}
+   .cols4{width: 33.33%;}
+   .cols5{width: 41.66%;}
+   .cols6{width: 50%;}
+   .cols7{width: 58.33%;}
+   .cols8{width: 66.66%;}
+   .cols9{width: 75%;}
+   .cols10{width: 83.33%;}
+   .cols11{width: 91.66%;}
+   .cols12{width: 100%;}
+}
+/*nuo 600px ir daugiau*/
+@media screen AND (min-width:601px){
+   .container{width: 85%; margin: auto;}
+   .colm1{width: 8.33%;}
+   .colm2{width: 16.66%;}
+   .colm3{width: 25%;}
+   .colm4{width: 33.33%;}
+   .colm5{width: 41.66%;}
+   .colm6{width: 50%;}
+   .colm7{width: 58.33%;}
+   .colm8{width: 66.66%;}
+   .colm9{width: 75%;}
+   .colm10{width: 83.33%;}
+   .colm11{width: 91.66%;}
+   .colm12{width: 100%;}
+}
+/*nuo 993 ir daugiau*/
+@media screen AND (min-width:993px){
+   .container{width: 70%; margin: auto;}
+   .coll1{width: 8.33%;}
+   .coll2{width: 16.66%;}
+   .coll3{width: 25%;}
+   .coll4{width: 33.33%;}
+   .coll5{width: 41.66%;}
+   .coll6{width: 50%;}
+   .coll7{width: 58.33%;}
+   .coll8{width: 66.66%;}
+   .coll9{width: 75%;}
+   .coll10{width: 83.33%;}
+   .coll11{width: 91.66%;}
+   .coll12{width: 100%;}
+}
+
+
+		/*Forma -- susisiekti -- */
+
+.form-element{
+	margin: 5px;	
+}
+
+.label{
+	text-align: right;
+	padding-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
