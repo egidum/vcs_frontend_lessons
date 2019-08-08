@@ -1,0 +1,34 @@
+*{
+    color: blue;
+    font-family: sans-serif;
+/*    border: 1px solid black;*/
+}
+
+[src="images/willy.jpg"]{
+    width: 150px;
+    height: 150px;
+}
+
+/*
+[src="images/green.jpg"]{
+    width: 200px;
+    height: 200px;
+}
+*/
+
+[src^="images/green"]{
+    width: 100px;
+    height: 100px;
+}
+
+th, td{
+    background-color: skyblue;
+}
+
+/*konkrečios lentelės vietos nuspalvinimas*/
+table tr:nth-child(2) td:nth-child(2){
+    background-color: orchid;
+}
+table tr:nth-child(3) td:nth-child(1){
+    background-color: greenyellow;
+}

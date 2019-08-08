@@ -1,0 +1,13 @@
+/*užvedus pele pasidaro 6px tarpai*/
+a:hover{
+    letter-spacing: 0.4em;
+}
+
+a:visited{
+    background-color: red;
+}
+
+p::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}

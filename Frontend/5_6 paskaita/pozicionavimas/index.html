@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+   <style>
+      .article{
+         position: relative;
+         width: 33%;
+         border: 1px solid black;
+         left: 100px;
+         top: 20px;
+         background-color: yellowgreen;
+      }
+/*
+      Iškeltas langas su fonu
+      z-index reikšmė 999 tam, kad pirmas 
+      elementas garantuotai būtų viršuje
+*/
+      .article:first-child{
+         position: fixed;
+         background-color: aquamarine;
+         left: 200px;
+         z-index: -1;
+      }
+      
+      .article:first-child img{
+         width: 100%; 
+         
+      }
+      
+      .modal-bg{
+         position: fixed;
+         width: 100vw;
+         height: 100vh;
+         background-color: rgba(0, 0, 0, 0.5);
+         z-index: -1;
+    
+      }
+   </style>
+</head>
+
+<body>
+   <div class="modal-bg">
+         <div class="article">
+            <img src="https://picsum.photos/200/300">
+         </div>
+   </div>
+         
+<!--
+   <div class="article">
+      <h1>Antraštė 1</h1>
+      <img src="https://picsum.photos/200/300">
+      <p>E se imitarentur. Quamquam varias eiusmod. Illum doctrina aut doctrina. Culpa 
+         officia ne minim quem a pariatur exercitation a ingeniis, malis expetendis 
+         familiaritatem de officia eram o admodum efflorescere. De minim doctrina 
+         cohaerescant qui arbitror concursionibus ne proident. Ea cernantur o quibusdam, 
+         senserit fugiat enim officia fugiat, veniam illustriora consequat nulla 
+         doctrina, anim quamquam praetermissum. Summis consequat e veniam ipsum ne legam 
+         ne senserit iis possumus tamen voluptate qui ad quis excepteur deserunt non se 
+         duis sunt enim admodum a malis nescius ne imitarentur non non fore excepteur 
+         nescius, nisi a iis elit appellat.</p>
+   
+   </div>
+-->
+   <div class="article">
+      <h1>Antraštė 2</h1>
+      <img src="https://picsum.photos/200/300">
+      <p>E se imitarentur. Quamquam varias eiusmod. Illum doctrina aut doctrina. Culpa 
+         officia ne minim quem a pariatur exercitation a ingeniis, malis expetendis 
+         familiaritatem de officia eram o admodum efflorescere. De minim doctrina 
+         cohaerescant qui arbitror concursionibus ne proident. Ea cernantur o quibusdam, 
+         senserit fugiat enim officia fugiat, veniam illustriora consequat nulla 
+         doctrina, anim quamquam praetermissum. Summis consequat e veniam ipsum ne legam 
+         ne senserit iis possumus tamen voluptate qui ad quis excepteur deserunt non se 
+         duis sunt enim admodum a malis nescius ne imitarentur non non fore excepteur 
+         nescius, nisi a iis elit appellat.</p>
+   
+   </div>
+   <div class="article">
+      <h1>Antraštė 3</h1>
+      <img src="https://picsum.photos/200/300">
+      <p>E se imitarentur. Quamquam varias eiusmod. Illum doctrina aut doctrina. Culpa 
+         officia ne minim quem a pariatur exercitation a ingeniis, malis expetendis 
+         familiaritatem de officia eram o admodum efflorescere. De minim doctrina 
+         cohaerescant qui arbitror concursionibus ne proident. Ea cernantur o quibusdam, 
+         senserit fugiat enim officia fugiat, veniam illustriora consequat nulla 
+         doctrina, anim quamquam praetermissum. Summis consequat e veniam ipsum ne legam 
+         ne senserit iis possumus tamen voluptate qui ad quis excepteur deserunt non se 
+         duis sunt enim admodum a malis nescius ne imitarentur non non fore excepteur 
+         nescius, nisi a iis elit appellat.</p>
+   
+   </div>
+   
+</body>
+</html>
