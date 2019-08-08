@@ -9,14 +9,34 @@
 <body>
 
 	<script>
-		function ar18(amzius){
-			return (amzius >= 18);
+//		function ar18(amzius){
+//		return (amzius >= 18);
+//		}
+//
+//		if(ar18(15)){
+//			document.write("Galima užeiti");
+//		}else{
+//			document.write("Jums nėra 18");
+//		}
+//
+
+
+
+
+		function checkAge(age) {
+		  if (age > 18) {
+			return true;
+		  } else {
+			return confirm("Tėvai leido?");
+		  }
 		}
 
-		if(ar18(15)){
-			document.write("Galima užeiti");
-		}else{
-			document.write("Jums nėra 18");
+		let age = prompt("Kiek jums metų?", 18);
+
+		if ( checkAge(age) ) {
+		  alert( "Prisijungėte" );
+		} else {
+		  alert( "Prsijungimas nepavyko" );
 		}
 
 
